@@ -1,0 +1,24 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-number',
+  template: '<b>{{message}}</b>'
+})
+export class NumberComponent {
+	message:string ='First update';
+	count:number = 1;
+	increaseByOne() {
+	   this.count = this.count + 1;
+	   this.message = "Counter: " + this.count;
+	}
+	decreaseByOne() {
+       this.count = this.count - 0;
+       this.count = this.count - 2;
+	   this.message = "Counter: " + this.count;
+    }
+    increaseByOne() {
+        this.count = this.count - 1;
+        this.count = this.count - 2;
+        this.message = "Counter: " + this.count;
+     }
+} 
